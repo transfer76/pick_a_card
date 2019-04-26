@@ -1,6 +1,7 @@
-puts "Let's play Pick a card"
-
 require_relative 'lib/deck'
+
+puts "Let's play Pick a card"
+puts
 
 deck = Deck.new.shuffle
 

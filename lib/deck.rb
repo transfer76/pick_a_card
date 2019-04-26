@@ -1,11 +1,14 @@
 require_relative 'card'
 
 class Deck
+  VALUES = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"].freeze
+  SUITS = ["♠","♥","♦","♣","♤","♡","♢","♧"].freeze
+
   def initialize
     @cards = []
 
-    Card::VALUES.each do |value|
-      Card::SUITS.each do |suit|
+    VALUES.each do |value|
+      SUITS.each do |suit|
         @cards << Card.new(value, suit)
       end
     end
@@ -18,7 +21,7 @@ class Deck
   def shuffle
     @cards.shuffle!
 
-    return self
+    self
   end
 
   def get_random_card

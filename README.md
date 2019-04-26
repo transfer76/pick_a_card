@@ -17,5 +17,5 @@ Language: Ruby, version 5.2.3
 3. Start command
 
 ```cassandraql
-$ ruby pick_a_card.rb
+$ ruby main.rb
 ```
