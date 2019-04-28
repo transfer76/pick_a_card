@@ -7,12 +7,8 @@ class Deck
   def initialize
     @cards = []
 
-    VALUES.each do |value|
-      SUITS.each do |suit|
-        @cards << Card.new(value, suit)
-      end
-    end
-
+    VALUES.zip(SUITS).map{ |value, suit| @cards << Card.new(value, suit) }
+    
     2.times do
       @cards << Card.new(nil, nil, true)
     end
