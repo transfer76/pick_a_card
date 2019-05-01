@@ -3,6 +3,7 @@ class Card
     @value = value
     @suit = suit
     @joker = joker
+    @cards = []
   end
 
   def to_s

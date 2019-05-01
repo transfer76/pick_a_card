@@ -5,9 +5,7 @@ class Deck
   SUITS = ["♠","♥","♦","♣","♤","♡","♢","♧"].freeze
 
   def initialize
-    @cards = []
-
-    VALUES.zip(SUITS).map{ |value, suit| @cards << Card.new(value, suit) }
+    @cards = VALUES.zip(SUITS).map{ |value, suit| Card.new(value, suit) }
     
     2.times do
       @cards << Card.new(nil, nil, true)
