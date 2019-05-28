@@ -16,6 +16,6 @@ Language: Ruby, version 5.2.3
 
 3. Start command
 
-```cassandraql
+```
 $ ruby main.rb
 ```
